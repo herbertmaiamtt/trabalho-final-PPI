@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Mogent";
+    src: url("../fonts/Mogent.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    /*
+    opentype (otf)
+    truetype (ttf)
+    */
+}
+
+body{
+    background-color: #daf4ff;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.cabecalho-galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo_clinica{
+    font-family: Mogent;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 1px #87d1eb;
+    color: #1E2D59;
+    /*#3460AF*/
+}
+
+.conteudo-galeria{
+    background-color: #f6fcfe;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.cabecalho-menu-galeria{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    padding: 20px;
+    margin: auto;
+    background-color: #2A56A4;
+    position: sticky;
+    top: 0;
+}
+
+.cabecalho-menu-item-galeria{
+    text-decoration: none;
+    color: #dfe7ff;
+    font-family: Mogent;
+    font-weight: bolder;
+}
+
+.conteudo-section-titulo-galeria{
+    background-color: #0095d5;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 5px 15px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: white;
+}
+
+.container-imgs-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.fundo-item-img-galeria{
+    background-color: #daf4ff;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin: 15px 10px 15px 10px; 
+    width: 360px;
+    height: 240px;
+}
+
+.fundo-item-img-galeria:hover, .fundo-item-img-galeria:active{
+    background-color: #0095d5;
+}
+
+.item-img-galeria{
+    margin: auto;
+    padding: 10px;
+}
+
+.conteudo-footer{
+    background-color: #2A56A4;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start
+}
+
+.conteudo-coluna-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo-coluna-footer, li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.conteudo-coluna-footer > h3{
+    border-bottom: 0.4px solid #FFF2E7;
+}

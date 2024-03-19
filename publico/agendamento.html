@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_agendamento.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <header class="cabecalho-home">
+        <h1 class="logo_clinica">Clínica Maya</h1>
+    </header>
+    <nav class="cabecalho-menu-home">
+        <a href="agendamento.html" class="cabecalho-menu-item-home">Agendamento</a>
+        <a href="cadastraEndereco.html" class="cabecalho-menu-item-home">Novo Endereço</a>
+        <a href="login.html" class="cabecalho-menu-item-home">Login</a>
+        <a href="galeria.html" class="cabecalho-menu-item-home">Galeria </a>
+        <a href="index.html" class="cabecalho-menu-item-home">Home</a>
+    </nav>
+    <main class="conteudo">
+        <div class="formulario">
+            <form>
+                <label for="nome">Digite seu nome :</label>
+                <input type="text" name="nome" class="nome">
+
+                <label for="email">Digite seu E-mail :</label>
+                <input type="email" name="email" class="email">
+
+                <label for="sexo">Selecione o seu sexo</label>
+                <select name="sexo" class="sexo">
+                    <option value="vazio"></option>>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="especialidade">Selecione uma especialidade medica :</label>
+                <select name="especialidade" class="especialidade">
+                    <option value="vazio"></option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="endocrinologia">Endocrinologia</option>
+                    <option value="gastroenterologia">Gastroenterologia</option>
+                    <option value="geriatria">Geriatria</option>
+                    <option value="ginecologia">Ginecologia</option>
+                    <option value="neurologia">Neurologia</option>
+                    <option value="oftalmologia">Oftalmologia</option>
+                    <option value="ortopedia">Ortopedia</option>
+                    <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="psiquiatria">Psiquiatria</option>
+                </select>
+
+                <label for="medico">Selecione o médico especialista</label>
+                <select name="medico" class="medico">
+                    <option value="vazio"></option>
+                    <option value="dr_jose">Dr. José</option>
+                    <option value="dra_maria">Dra. Maria</option>
+                    <option value="dr_paulo">Dr. Paulo</option>
+                    <option value="dra_ana">Dra. Ana</option>
+                    <option value="dr_carlos">Dr. Carlos</option>
+                </select>
+
+                <label for="dataconsulta">Selecione a data desejada</label>
+                <input type="date" name="dataconsulta" class="dataconsulta">
+
+                <label for="horarios">Horários disponíveis</label>
+                <select name="horarios" class="horarios">
+                    <option value="vazio"></option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                </select>
+                <button>Agendar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="conteudo-footer">
+            <div class="conteudo-coluna-footer">
+                <h3>Serviços</h3>
+                <ul>
+                    <li>Fisioterapia</li>
+                    <li>Ecocardiograma</li>
+                    <li>Eletrocardiograma</li>
+                    <li>Colonoscopia</li>
+                    <li>Endoscopia</li>
+                    <li>Mamografia</li>
+                    <li>Raio-x</li>
+                    <li>Tomografia</li>
+                </ul>
+            </div>
+            <div class="conteudo-coluna-footer">
+                <h3>Especialidades</h3>
+                <ul>
+                    <li>Cardiologia</li>
+                    <li>Dermatologia</li>
+                    <li>Endocrinologia</li>
+                    <li>Fisioterapia</li>
+                </ul>
+            </div>
+            <div class="conteudo-coluna-footer">
+                <h3>Contato</h3>
+                <ul>
+                    <li>(34)98888-8888</li>
+                    <li>(34)98888-8888</li>
+                    <li>atendimento@clinicamaya.com.br</li>
+                    <li>Rua José Sistemas de Informação Jr., 234</li>
+                    <li>Uberlândia</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
