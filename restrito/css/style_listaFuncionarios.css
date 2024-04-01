@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: "Mogent";
     src: url("../fonts/Mogent.otf") format("opentype");
     font-weight: normal;
@@ -17,9 +17,8 @@
 }
 
 body{
-    background-color: var(--cor_fundo);
-    margin: auto;
-    font-family:Arial, Helvetica, sans-serif;
+    background-color: #daf4ff;
+    margin: 0px;
 }
 
 header{
@@ -30,20 +29,20 @@ header{
 
 /*Menu de navegação pública*/
 .cabecalho{
-    background-color: var(--cor_cabecalho);
+    background-color: #2A56A4;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: Mogent;
 }
 
 .logo_clinica{
     margin-left: 30px;
+    font-family: Mogent;
     font-size: 3em;
     font-weight: bold;
     text-shadow: 1px 1px #daf4ff;
-    color: var(--cor_logo);
+    color: #87d1eb;
 }
 
 .cabecalho_menu{
@@ -55,10 +54,12 @@ header{
 
 .cabecalho_menu_item{
     text-decoration: none;
+    font-family: Mogent;
     font-weight: bolder;
-    color: var(--cor_item_cabecalho);
+    color:#daf4ff;
 }
 
+/*Menu de navegação restrita*/
 .cabecalho_restrito{
     background-color: var(--cor_aside);
     display: flex;
@@ -67,49 +68,49 @@ header{
     font-family: Mogent;
 }
 
-/*Menu de navegação restrita*/
 .cabecalho_restrito_menu{
     display: flex;
     flex-direction: row;
+    margin-right: 30px;
     gap: 30px;
     align-items:baseline
 }
 
 .cabecalho_restrito_menu > h3{
     margin-left: 30px;
-    color: var(--cor_item_cabecalho);
+    color: var(--cor_fundo);
 }
 
 .cabecalho_restrito_menu_item{
     text-decoration: none;
     margin-left: 30px;
-    color: var(--cor_item_cabecalho);
+    color: var(--cor_fundo);
 }
 
 /*Conteúdo principal*/
 main{
     display: flex;
-    min-height: 500px;
-    padding: 20px;
+    height: 573px;
 }
 
-article{
-    margin: auto;
+.conteudo_principal{
     background-color: var(--cor_conteudo);
-    border-radius: 10px;
-    padding: 10px; 
+    display: flex;
+    justify-content: center;
     max-width: 1500px;
-    min-width: 400px; 
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+    overflow-x: auto;
 }
 
-
-article h2{
-    margin-left: 30px;
+table{
+    font-size: 18px;
 }
 
-article p{
-    margin-left: 30px;
-    text-align: left;
+th, td{
+    border: 1px solid gray;
+    padding: 5px;
 }
 
 /*Rodapé*/

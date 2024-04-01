@@ -3,131 +3,142 @@
     src: url("../fonts/Mogent.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
-    /*
-    opentype (otf)
-    truetype (ttf)
-    */
+}
+
+:root{
+    --cor_fundo:#daf4ff;
+    --cor_cabecalho:#2A56A4;
+    --cor_item_cabecalho:#dfe7ff;
+    --cor_conteudo:#f6fcfe;  
+    --cor_destaque:#0095d5;
+    --cor_logo:#87d1eb; 
+    --cor_input: #f2f2f2;
 }
 
 body{
-    background-color: #daf4ff;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    background-color: var(--cor_fundo);
+    margin: 0;
     font-family:Arial, Helvetica, sans-serif;
 }
-.cabecalho-home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: "Mogent";
-}
 
-.logo_clinica{
-    font-family: Mogent;
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 2px 1px #87d1eb;
-    color: #1E2D59;
-    /*#3460AF*/
-}
-
-.cabecalho-menu-home{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 32px;
-    padding: 20px;
-    margin: auto;
-    background-color: #2A56A4;
+header{
     position: sticky;
     top: 0;
 }
 
-.cabecalho-menu-item-home{
-    text-decoration: none;
-    color: #dfe7ff;
+.cabecalho{
+    background-color: var(--cor_cabecalho);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-family: Mogent;
-    font-weight: bolder;
 }
 
-.conteudo{
-    background-color: #f6fcfe;
+.logo_clinica{
+    margin-left: 30px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px #daf4ff;
+    color: var(--cor_logo);
+}
+
+.cabecalho_menu{
     display: flex;
-    justify-content: center; 
-    padding: 10px;
-    width: 80%;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    gap: 30px;
+}
+
+.cabecalho_menu_item{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor_item_cabecalho);
+}
+
+main{
+    background-color: var(--cor_conteudo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 10px;
-}
-.formulario {
-    align-items: center;
-    width: 600px;
-    height: auto;
-    margin: 0;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #2A56A4;
-}
-form {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-label{
-    font-size: medium;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: white;
-}
-input{
-    width: 600px;
-    height: 55px;
-    border: 1px;
-    border-radius: 5px;
-    font-size: 20px;
-    background-color: #f2f2f2;
-}
-select{
-    width: 600px;
-    height: 55px;
-    border: 1px;
-    border-radius: 5px;
-    font-size: 15px;
-    background-color: #f2f2f2;
-}
-button{
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 1px;
-    width: 200px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #2A56A4;
-    height: 55px;
-    background-color: #ffffff;
+    padding: 10px;
+    width: 80%;
+    min-height: 495px;
 }
 
-.conteudo-footer{
+.div_formulario{
+    background-color: var(--cor_cabecalho);
+    align-items: center;
+    border-radius: 10px;
+    margin: 0;
+    padding: 20px;
+    width: 600px;
+    height: 300px;
+}
+
+.formulario{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: white;
+}
+
+input{
+    background-color: var(--cor_input);
+    border: 1px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 600px;
+    height: 55px;
+    font-size: 1.5em;
+}
+
+.container_botao{
+    display: flex;
+    justify-content: center;
+    width: 604px;
+}
+
+.botao_agendar{
+    background-color: white;
+    border: 1px;
+    border-radius: 10px;
+    width: 200px;
+    height: 55px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--cor_cabecalho);
+}
+
+.div_footer{
     background-color: #2A56A4;
     display: flex;
     justify-content: space-around;
     align-items:flex-start;
 }
 
-.conteudo-coluna-footer{
+.conteudo_footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.conteudo-coluna-footer, li{
+.conteudo_footer, li{
     color: white;
     text-decoration: none;
     list-style-type: none;
 }
 
-.conteudo-coluna-footer > h3{
+.conteudo_footer > h3{
     border-bottom: 0.4px solid #FFF2E7;
 }

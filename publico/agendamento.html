@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_agendamento.css">
-    <title>Agendamento</title>
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <title>Clínica Maya</title>
 </head>
 <body>
-    <header class="cabecalho-home">
-        <h1 class="logo_clinica">Clínica Maya</h1>
+    <header>
+        <div class="cabecalho">
+            <h1 class="logo_clinica">Clínica Maya</h1>
+            <nav class="cabecalho_menu">
+                <a href="agendamento.html" class="cabecalho_menu_item">Agendamento</a>
+                <a href="cadastraEndereco.html" class="cabecalho_menu_item">Novo Endereço</a>
+                <a href="login.html" class="cabecalho_menu_item">Login</a>
+                <a href="galeria.html" class="cabecalho_menu_item">Galeria</a>
+                <a href="index.html" class="cabecalho_menu_item">Home</a>
+            </nav>
+        </div>
     </header>
-    <nav class="cabecalho-menu-home">
-        <a href="agendamento.html" class="cabecalho-menu-item-home">Agendamento</a>
-        <a href="cadastraEndereco.html" class="cabecalho-menu-item-home">Novo Endereço</a>
-        <a href="login.html" class="cabecalho-menu-item-home">Login</a>
-        <a href="galeria.html" class="cabecalho-menu-item-home">Galeria </a>
-        <a href="index.html" class="cabecalho-menu-item-home">Home</a>
-    </nav>
-    <main class="conteudo">
-        <div class="formulario">
-            <form>
+
+    <main>
+        <div class="div_formulario">
+            <form class="formulario">
                 <label for="nome">Digite seu nome :</label>
                 <input type="text" name="nome" class="nome">
 
@@ -78,13 +82,14 @@
                     <option value="16:00">16:00</option>
                     <option value="17:00">17:00</option>
                 </select>
-                <button>Agendar</button>
+                <div class="container_botao"><button class="botao_agendar">Agendar</button></div>
             </form>
         </div>
     </main>
+
     <footer>
-        <div class="conteudo-footer">
-            <div class="conteudo-coluna-footer">
+        <div class="div_footer">
+            <div class="conteudo_footer">
                 <h3>Serviços</h3>
                 <ul>
                     <li>Fisioterapia</li>
@@ -97,7 +102,7 @@
                     <li>Tomografia</li>
                 </ul>
             </div>
-            <div class="conteudo-coluna-footer">
+            <div class="conteudo_footer">
                 <h3>Especialidades</h3>
                 <ul>
                     <li>Cardiologia</li>
@@ -106,7 +111,7 @@
                     <li>Fisioterapia</li>
                 </ul>
             </div>
-            <div class="conteudo-coluna-footer">
+            <div class="conteudo_footer">
                 <h3>Contato</h3>
                 <ul>
                     <li>(34)98888-8888</li>

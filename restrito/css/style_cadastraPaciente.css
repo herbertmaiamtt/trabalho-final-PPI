@@ -1,0 +1,246 @@
+@font-face{
+    font-family: "Mogent";
+    src: url("../fonts/Mogent.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor_fundo:#daf4ff;
+    --cor_cabecalho:#2A56A4;
+    --cor_item_cabecalho:#dfe7ff;
+    --cor_conteudo:#f6fcfe;  
+    --cor_destaque:#0095d5;
+    --cor_logo:#87d1eb;
+    --cor_input: #f2f2f2;
+    --cor_aside: #1E2D59;
+}
+
+body{
+    background-color: #daf4ff;
+    margin: 0px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    border-bottom: 0.4px solid #FFF2E7;
+}
+
+/*Menu de navegação pública*/
+.cabecalho{
+    background-color: #2A56A4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_clinica{
+    margin-left: 30px;
+    font-family: Mogent;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px #daf4ff;
+    color: #87d1eb;
+}
+
+.cabecalho_menu{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    gap: 30px;
+}
+
+.cabecalho_menu_item{
+    text-decoration: none;
+    font-family: Mogent;
+    font-weight: bolder;
+    color:#daf4ff;
+}
+
+/*Menu de navegação restrita*/
+.cabecalho_restrito{
+    background-color: var(--cor_aside);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Mogent;
+}
+
+.cabecalho_restrito_menu{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    gap: 30px;
+    align-items:baseline
+}
+
+.cabecalho_restrito_menu > h3{
+    margin-left: 30px;
+    color: var(--cor_fundo);
+}
+
+.cabecalho_restrito_menu_item{
+    text-decoration: none;
+    margin-left: 30px;
+    color: var(--cor_fundo);
+}
+
+/*Conteúdo principal*/
+main{
+    display: flex;
+    height: 573px;
+}
+
+.div_formulario{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.formulario{
+    background-color: var(--cor_cabecalho);
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    width: auto;
+    height: 400px;
+}
+
+.container_colunas{
+    display: flex;
+    justify-content: space-between;
+    width:1000px;
+}
+
+.coluna1{
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna2{
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna3{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: medium;
+    margin-top: 15px;
+    color: var(--cor_conteudo);
+}
+
+input{
+    width: 300px;
+    height: 25px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f2f2f2;
+}
+
+select{
+    width: 300px;
+    height: 25px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f2f2f2;
+}
+
+.medico{
+    height: 20px;
+}
+
+.especialidade{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.crm{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.input_box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.medico_info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.input-chackbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.container_botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao_cadastrar{
+    background-color: white;
+    border: 1px;
+    border-radius: 10px;
+    width: 350px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--cor_cabecalho);
+}
+
+button:hover{
+    background-color: #62a7c0;
+}
+
+.CEP{
+    margin:0;
+}
+
+/*Rodapé*/
+footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+}
+
+.div_footer{
+    background-color: #2A56A4;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo_footer, li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.conteudo_footer > h3{
+    border-bottom: 0.4px solid #FFF2E7;
+}

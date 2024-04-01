@@ -11,7 +11,8 @@
     --cor_item_cabecalho:#dfe7ff;
     --cor_conteudo:#f6fcfe;  
     --cor_destaque:#0095d5;
-    --cor_logo:#87d1eb; 
+    --cor_logo:#87d1eb;
+    --cor_input: #f2f2f2;
 }
 
 body{
@@ -57,59 +58,80 @@ header{
 
 main{
     background-color: var(--cor_conteudo);
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
     width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.section_conteudo{
+.div_formulario{
+    background-color: var(--cor_cabecalho);
+    border-radius: 10px;
+    margin: 0;
+    padding: 20px;
+    width: 600px;
+    height: auto;
+}
+
+.formulario{
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
 }
 
-.div_titulo_section{
-    background-color: var(--cor_destaque);
-    border-radius: 5px 15px;
-    margin: auto;
-    padding-right: 5px;
-    padding-left: 5px;
-    max-width: 800px;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: normal;
+label{
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 1em;
     color: white;
 }
 
-.container_imgs{
+select{
+    background-color: var(--cor_input);
+    border: 1px;
+    border-radius: 5px;
+    width: 600px;
+    height: 55px;
+    font-size: 1.5em;
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: white;
+}
+
+input{
+    background-color: var(--cor_input);
+    border: 1px;
+    border-radius: 5px;
+    width: 600px;
+    height: 55px;
+    font-size: 1.5em;
+}
+
+.container_botao{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 1280px;
+    justify-content: center;
+    width: 604px;
 }
 
-.fundo_item_img{
-    background-color: var(--cor_fundo);
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    margin: 15px 10px 15px 10px; 
-    width: 360px;
-    height: 240px;
-}
-
-.fundo_item_img:hover, .fundo_item_img:active{
-    background-color: var(--cor_destaque);
-}
-
-.item_img{
-    margin: auto;
-    padding: 10px;
+.botao_agendar{
+    background-color: white;
+    border: 1px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 200px;
+    height: 55px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--cor_cabecalho);    
 }
 
 .div_footer{
