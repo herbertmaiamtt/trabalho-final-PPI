@@ -3,107 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_cadastraEndereco.css">
-    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <link rel="stylesheet" href="css/style_agendamento.css">
     <title>Clínica Maya</title>
 </head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <h1 class="logo_clinica">Clínica Maya</h1>
-            <nav class="cabecalho_menu">
-                <a href="agendamento.html" class="cabecalho_menu_item">Agendamento</a>
-                <a href="cadastraEndereco.html" class="cabecalho_menu_item">Novo Endereço</a>
-                <a href="login.html" class="cabecalho_menu_item">Login</a>
-                <a href="galeria.html" class="cabecalho_menu_item">Galeria</a>
-                <a href="index.html" class="cabecalho_menu_item">Home</a>
-            </nav>
-        </div>
+<body class="container">
+    <header class="logo">
+        <h1>Clínica Maya</h1>
     </header>
 
-    <main>
-        <div class="div_formulario">
-            <form class="formulario">
-                <label for="estado">Selecione o seu estado</label>
-                <select name="estado">
-                    <option value="vazio"></option>
-                    <option value="estado">Acre</option>
-                    <option value="estado">Alagoas</option>
-                    <option value="estado">Amapá</option>
-                    <option value="estado">Amazonas</option>
-                    <option value="estado">Bahia</option>
-                    <option value="estado">Ceará</option>
-                    <option value="estado">Distrito Federal</option>
-                    <option value="estado">Espírito Santo</option>
-                    <option value="estado">Goiás</option>
-                    <option value="estado">Maranhão</option>
-                    <option value="estado">Mato Grosso</option>
-                    <option value="estado">Mato Grosso do Sul</option>
-                    <option value="estado">Minas Gerais</option>
-                    <option value="estado">Pará</option>
-                    <option value="estado">Paraíba</option>
-                    <option value="estado">Paraná</option>
-                    <option value="estado">Pernambuco</option>
-                    <option value="estado">Piauí</option>
-                    <option value="estado">Rio de Janeiro</option>
-                    <option value="estado">Rio Grande do Norte</option>
-                    <option value="estado">Rio Grande do Sul</option>
-                    <option value="estado">Rondônia</option>
-                    <option value="estado">Roraima</option>
-                    <option value="estado">Santa Catarina</option>
-                    <option value="estado">São Paulo</option>
-                    <option value="estado">Sergipe</option>
-                    <option value="estado">Tocantins</option>
-                </select>
+    <nav>
+        <ul class="menu">
+            <li class="item_menu"><a href="index.html" class="link_menu">Home</a></li>
+            <li class="item_menu"><a href="galeria.html" class="link_menu">Galeria</a></li>
+            <li class="item_menu"><a href="agendamento.html" class="link_menu">Agendamento</a></li>
+            <li class="item_menu"><a href="cadastraEndereco.html" class="link_menu">Novo Endereço</a></li>
+            <li class="item_menu"><a href="login.html" class="link_menu">Login</a></li>
+        </ul>
+    </nav>
 
-                <label for="cidadea">Digite sua cidade:</label>
-                <input type="text" name="cidade" id="cidade">
+    <main class="conteudo">
+        <section>
+            <div>
+                <form action="#" method="POST" class="container_campo">
+                    <h1>Cadastrar Endereço</h1>
+                    
+                        <label for="nome">CEP</label>
+                        <input type="text" required name="nome" autofocus>
+                        
+                        <label for="estado">Estado</label>
+                        <input tyoe="text" required name="estado" autofocus>
 
-                <label for="CEP">Digite seu CEP:</label>
-                <input type="text" name="CEP" id="CEP">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" required name="cidade" autofocus>
 
-                <label for="lagradouro">Lagradouro:</label>
-                <input type="text" name="lagradouro" id="lagradouro">
+                        <label for="lagradouro">Lagradouro</label>
+                        <input type="text" required name="ladradouro" autofocus>
 
-                <div class="container_botao"><button class="botao_agendar">Agendar</button></div>
+                    <button>Cadastrar</button>  
             </form>
         </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="div_footer">
-            <div class="conteudo_footer">
-                <h3>Serviços</h3>
-                <ul>
-                    <li>Fisioterapia</li>
-                    <li>Ecocardiograma</li>
-                    <li>Eletrocardiograma</li>
-                    <li>Colonoscopia</li>
-                    <li>Endoscopia</li>
-                    <li>Mamografia</li>
-                    <li>Raio-x</li>
-                    <li>Tomografia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Especialidades</h3>
-                <ul>
-                    <li>Cardiologia</li>
-                    <li>Dermatologia</li>
-                    <li>Endocrinologia</li>
-                    <li>Fisioterapia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Contato</h3>
-                <ul>
-                    <li>(34)98888-8888</li>
-                    <li>(34)98888-8888</li>
-                    <li>atendimento@clinicamaya.com.br</li>
-                    <li>Rua José Sistemas de Informação Jr., 234</li>
-                    <li>Uberlândia</li>
-                </ul>
-            </div>
+    <footer class="container_footer">
+        <div class="conteudo_footer">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Fisioterapia</li>
+                <li>Ecocardiograma</li>
+                <li>Eletrocardiograma</li>
+                <li>Colonoscopia</li>
+                <li>Endoscopia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Especialidades</h2>
+            <ul>
+                <li>Cardiologia</li>
+                <li>Dermatologia</li>
+                <li>Endocrinologia</li>
+                <li>Fisioterapia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Contato</h2>
+            <ul>
+                <li>(34)98888-8888</li>
+                <li>(34)98888-8888</li>
+                <li>atendimento@clinicamaya.com.br</li>
+                <li>Rua José Sistemas de Informação Jr., 234</li>
+                <li>Uberlândia</li>
+            </ul>
         </div>
     </footer>
 </body>

@@ -1,3 +1,6 @@
+/*
+fonte baixada
+*/
 @font-face {
     font-family: "Mogent";
     src: url("../fonts/Mogent.otf") format("opentype");
@@ -5,140 +8,205 @@
     font-style: normal;
 }
 
+
+/*
+para facilitar a utilização das cores do site
+*/
 :root{
-    --cor_fundo:#daf4ff;
-    --cor_cabecalho:#2A56A4;
+    --cor_fundo:#edf1f6; 
+    --cor_cabecalho:#08395C;
     --cor_item_cabecalho:#dfe7ff;
-    --cor_conteudo:#f6fcfe;  
-    --cor_destaque:#0095d5;
+    --cor_conteudo:#f6fcfe;    
+    --cor_destaque:#f6fcfe; 
     --cor_logo:#87d1eb;
-    --cor_input: #f2f2f2;
-    --cor_aside: #1E2D59;
+    --cor_input: #f2f2f2; 
 }
-
-body{
+ 
+ /*
+ tag: body
+ facilita o posicionamento do rodapé sempre
+ na parte de baixo da página
+ */
+ .container{
     background-color: var(--cor_fundo);
-    margin: auto;
-    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    border-bottom: 0.4px solid #FFF2E7;
-}
-
-/*Menu de navegação pública*/
-.cabecalho{
+/*
+tag: header
+controla a tag h1 com o nome da clínica
+*/
+.logo{
     background-color: var(--cor_cabecalho);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    /*fontes*/
     font-family: Mogent;
-}
-
-.logo_clinica{
-    margin-left: 30px;
-    font-size: 3em;
+    font-size: larger;
     font-weight: bold;
     text-shadow: 1px 1px #daf4ff;
     color: var(--cor_logo);
 }
 
-.cabecalho_menu{
+/*
+tag: ul
+fica dentro de nav e é utilizada para responsividade
+do menu
+*/
+.menu{
+    background-color: var(--cor_cabecalho);
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 30px;
-    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
+    /*
+    tag: li
+    todos os itens ocupam no min 200px e crescem
+    e diminuem de igualmente
+    */
+    .item_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 200px;
+        margin: 5px;
+        padding: 0;
+    }
+        /*
+        tag: a
+        parmite que ao clicar em qualquer área dentro do
+        espaço da tag a ação de redirecionar para o link
+        seja ativada
+        */
+        .link_menu{
+            display: block;
+            padding: 20px;
+            /*fontes*/
+            font-family: Mogent;
+            text-decoration: none;
+            font-weight: bolder;
+            color: var(--cor_item_cabecalho);
+        }
 
-.cabecalho_menu_item{
-    text-decoration: none;
-    font-weight: bolder;
-    color: var(--cor_item_cabecalho);
-}
-
-.cabecalho_restrito{
-    background-color: var(--cor_aside);
+/*
+tag: main
+auxilia na responsividade da página utilizando flex: 1 e
+centralização vertical
+*/
+.conteudo{
+    flex: 1;
+    flex-direction: column;
+    /*centralização vertical*/
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /*fontes*/
     font-family: Mogent;
 }
 
-/*Menu de navegação restrita*/
-.cabecalho_restrito_menu{
+    /*
+    tag: article
+    contém o conteúdo da home
+    */
+    .container_conteudo_princ_card{
+        background-color: var(--cor_conteudo);
+        width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+        article{
+            text-align: baseline;
+        }
+
+        article h1{
+            font-size: 2em;
+        }
+
+        article p{
+            font-size: 1.2em;
+        }
+
+.container_footer{
+    background-color: var(--cor_cabecalho);
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items:baseline
+    justify-content: space-around;
+    align-items: baseline;
 }
 
-.cabecalho_restrito_menu > h3{
-    margin-left: 30px;
-    color: var(--cor_item_cabecalho);
+    .conteudo_footer{
+        text-decoration: none;
+        color: white;
+    }
+
+    .conteudo_footer li{
+        list-style-type: none;
+    }
+
+    .conteudo_footer h2{
+        border-bottom: 0.4px solid #FFF2E7;
+    }
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 900px){
+    .item_menu{
+        flex-basis: 100px;
+    }
+
 }
 
-.cabecalho_restrito_menu_item{
-    text-decoration: none;
-    margin-left: 30px;
-    color: var(--cor_item_cabecalho);
+/*
+configurações para telas menoras que 700px
+*/
+@media (max-width: 700px){
+.conteudo{
+    padding: 0;
 }
-
-/*Conteúdo principal*/
-main{
-    display: flex;
-    min-height: 500px;
-    padding: 20px;
+/*
+conteudo principal e dos cards ocupada 100% da
+largura 
+*/
+.container_conteudo_princ_card{
+    width: 100%;
+    padding: 0;
 }
 
 article{
-    margin: auto;
-    background-color: var(--cor_conteudo);
-    border-radius: 10px;
-    padding: 10px; 
-    max-width: 1500px;
-    min-width: 400px; 
+    padding: 25px;
 }
 
-
-article h2{
-    margin-left: 30px;
-}
-
-article p{
-    margin-left: 30px;
-    text-align: left;
-}
-
-/*Rodapé*/
-footer{
-    bottom: 0;
-    left: 0;
-    width: 100%;    
-}
-
-.div_footer{
-    background-color: #2A56A4;
-    display: flex;
-    justify-content: space-around;
-    align-items:flex-start;
-    border-top: 0.4px solid #FFF2E7;
-}
-
-.conteudo_footer{
-    display: flex;
+.container_footer{
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
-.conteudo_footer, li{
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
+    .conteudo_footer{
+        width: 300px;
+        text-align: center;
+    }
+
+    .conteudo_footer h2{
+        text-align: start;
+    }
 }
 
-.conteudo_footer > h3{
-    border-bottom: 0.4px solid #FFF2E7;
+/*
+configurações para telas menores que 520px
+*/
+@media (max-width: 520px){
+    article{
+        text-align: start;
+        padding: 10px;
+    }
+
 }

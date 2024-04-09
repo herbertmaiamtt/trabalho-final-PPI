@@ -8,15 +8,16 @@ fonte baixada
     font-style: normal;
 }
 
+
 /*
 para facilitar a utilização das cores do site
 */
 :root{
-    --cor_fundo:#daf4ff;
-    --cor_cabecalho:#2A56A4;
+    --cor_fundo:#edf1f6; 
+    --cor_cabecalho:#081f5c;
     --cor_item_cabecalho:#dfe7ff;
-    --cor_conteudo:#f6fcfe;  
-    --cor_destaque:#0095d5;
+    --cor_conteudo:#f6fcfe;    
+    --cor_destaque:#f6fcfe; 
     --cor_logo:#87d1eb;
     --cor_input: #f2f2f2; 
 }
@@ -111,6 +112,7 @@ centralização vertical
     align-items: center;
     padding: 20px;
     /*fontes*/
+    font-family: Mogent;
     font-size: large;
 }
 
@@ -144,7 +146,7 @@ centralização vertical
         background-color e largura dos cards
         */
         .card{
-            background-color: var(--cor_destaque);
+            background-color: var(--cor_fundo);
             max-width: 400px;
             text-align: center;
             border-radius: 10px;
@@ -152,7 +154,7 @@ centralização vertical
             padding: 10px;
             flex: 1;
             /*fontes*/
-            color: white;
+            color: black;
         }
 
 .container_footer{

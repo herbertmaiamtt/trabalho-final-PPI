@@ -3,73 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style_login.css">
-    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <link rel="stylesheet" href="css/style_agendamento.css">
     <title>Clínica Maya</title>
 </head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <h1 class="logo_clinica">Clínica Maya</h1>
-            <nav class="cabecalho_menu">
-                <a href="agendamento.html" class="cabecalho_menu_item">Agendamento</a>
-                <a href="cadastraEndereco.html" class="cabecalho_menu_item">Novo Endereço</a>
-                <a href="login.html" class="cabecalho_menu_item">Login</a>
-                <a href="galeria.html" class="cabecalho_menu_item">Galeria</a>
-                <a href="index.html" class="cabecalho_menu_item">Home</a>
-            </nav>
-        </div>
+<body class="container">
+    <header class="logo">
+        <h1>Clínica Maya</h1>
     </header>
 
-    <main>
-        <div class="div_formulario">
-            <form class="formulario">
-                <label for="email">Digite seu e-mail:</label>
-                <input type="email" name="email" id="email">
+    <nav>
+        <ul class="menu">
+            <li class="item_menu"><a href="index.html" class="link_menu">Home</a></li>
+            <li class="item_menu"><a href="galeria.html" class="link_menu">Galeria</a></li>
+            <li class="item_menu"><a href="agendamento.html" class="link_menu">Agendamento</a></li>
+            <li class="item_menu"><a href="cadastraEndereco.html" class="link_menu">Novo Endereço</a></li>
+            <li class="item_menu"><a href="login.html" class="link_menu">Login</a></li>
+        </ul>
+    </nav>
 
-                <label for="senha">Digite sua senha:</label>
-                <input type="password" name="senha " id="senha">
+    <main class="conteudo">
+        <section>
+            <div>
+                <form action="#" method="POST" class="container_campo">
+                    <h1>Agendamento</h1>
 
-                <div class="container_botao"><button class="botao_agendar">Agendar</button></div>
+                        <label for="email">E-mail</label>
+                        <input type="e-mail" required name="email" autofocus>
+
+                        <label for="senha">Senha</label>
+                        <input type="password" required name="senha" autofocus>
+                        
+                    <button>Agendar</button>  
             </form>
         </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="div_footer">
-            <div class="conteudo_footer">
-                <h3>Serviços</h3>
-                <ul>
-                    <li>Fisioterapia</li>
-                    <li>Ecocardiograma</li>
-                    <li>Eletrocardiograma</li>
-                    <li>Colonoscopia</li>
-                    <li>Endoscopia</li>
-                    <li>Mamografia</li>
-                    <li>Raio-x</li>
-                    <li>Tomografia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Especialidades</h3>
-                <ul>
-                    <li>Cardiologia</li>
-                    <li>Dermatologia</li>
-                    <li>Endocrinologia</li>
-                    <li>Fisioterapia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Contato</h3>
-                <ul>
-                    <li>(34)98888-8888</li>
-                    <li>(34)98888-8888</li>
-                    <li>atendimento@clinicamaya.com.br</li>
-                    <li>Rua José Sistemas de Informação Jr., 234</li>
-                    <li>Uberlândia</li>
-                </ul>
-            </div>
+    <footer class="container_footer">
+        <div class="conteudo_footer">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Fisioterapia</li>
+                <li>Ecocardiograma</li>
+                <li>Eletrocardiograma</li>
+                <li>Colonoscopia</li>
+                <li>Endoscopia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Especialidades</h2>
+            <ul>
+                <li>Cardiologia</li>
+                <li>Dermatologia</li>
+                <li>Endocrinologia</li>
+                <li>Fisioterapia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Contato</h2>
+            <ul>
+                <li>(34)98888-8888</li>
+                <li>(34)98888-8888</li>
+                <li>atendimento@clinicamaya.com.br</li>
+                <li>Rua José Sistemas de Informação Jr., 234</li>
+                <li>Uberlândia</li>
+            </ul>
         </div>
     </footer>
 </body>
-</html>    
+</html>
