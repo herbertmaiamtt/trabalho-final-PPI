@@ -6,183 +6,156 @@
     <link rel="stylesheet" href="css/style_cadastraFuncionario.css">
     <title>Clínica Maya</title>
 </head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <h1 class="logo_clinica">Clínica Maya</h1>
-            <nav class="cabecalho_menu">
-                <a href="../publico/agendamento.html" class="cabecalho_menu_item">Agendamento</a>
-                <a href="../publico/agendamento.html" class="cabecalho_menu_item">Novo Endereço</a>
-                <a href="../publico/login.html" class="cabecalho_menu_item">Login</a>
-                <a href="../publico/galeria.html" class="cabecalho_menu_item">Galeria</a>
-                <a href="../publico/index.html" class="cabecalho_menu_item">Home</a>
-            </nav>
-        </div>
-        <div class="cabecalho_restrito">
-            <div class="cabecalho_restrito_menu">
-                <h3>Acesso restrito</h3>
-                <a href="index.html" class="cabecalho_restrito_menu_item">Início</a>
-                    <a href="cadastraFuncionario.html" class="cabecalho_restrito_menu_item">Novo Funcionário</a>
-                    <a href="cadastraPaciente.html" class="cabecalho_restrito_menu_item">Novo Paciente</a>
-                    <a href="listaFuncionarios.html" class="cabecalho_restrito_menu_item">Listar Funcionários</a>
-                    <a href="listaEnderecos.html" class="cabecalho_restrito_menu_item">Listar Endereços</a>
-                    <a href="listaAgendamentos.html" class="cabecalho_restrito_menu_item">Listar todos Agendamentos</a>
-            </div>
-        </div>
+<body class="container">
+    <header class="logo">
+        <h1>Clínica Maya</h1>
     </header>
 
-    <main>
-        <div class="div_formulario">
-            <form class="formulario">
-                <div class="container_colunas">
-                    <div class="coluna1">
-                        <label for="nome">Nome funcionario:</label>
-                        <input type="text" name="nome" id="nome">
-                        <label for="email">Digite seu E-mail :</label>
-                        <input type="email" name="email" class="email">
-                        <label for="sexo">Selecione o seu sexo</label>
-                        <select name="sexo" class="sexo">
-                            <option value="vazio"></option>>
+    <nav>
+        <ul class="menu">
+            <li class="item_menu"> <a href="cadastraFuncionario.html" class="link_menu">Novo Funcionário</a></li>
+            <li class="item_menu"> <a href="cadastraPaciente.html" class="link_menu">Novo Paciente</a></li>
+            <li class="item_menu"> <a href="listaFuncionarios.html" class="link_menu">Funcionários</a></li>
+            <li class="item_menu"><a href="listaEnderecos.html" class="link_menu">Endereços</a></li>
+            <li class="item_menu"><a href="listaAgendamentos.html" class="link_menu">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo">
+        <section>
+            <div>
+                <form action="#" method="POST" class="container_campo">
+                    <h1>Cadastro Funcionário</h1>
+                        <label for="nome">Nome</label>
+                        <input type="text" required name="nome" autofocus>
+                        
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo">
+                            <option value="vazio"></option>
                             <option value="masculino">Masculino</option>
                             <option value="feminino">Feminino</option>
                             <option value="outro">Outro</option>
                         </select>
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" name="telefone" class="telefone">
-                        <label for="cep" class="cep">CEP</label><br>
-                        <input type="text" name="cep" class="CEP">
-                        <label for="logradouro">Logradouro:</label>
-                        <input type="text" name="logradouro" class="logradouro">
-                    </div>
 
-                    <div class="coluna2">
-                        <label for="cidade">Selecione a sua cidade</label>
-                        <select name="cidade" class="cidade">
-                            <option value="vazio"></option>
-                            <option value="saopaulo">São Paulo</option>
-                            <option value="riodejaneiro">Rio de Janeiro</option>
-                            <option value="belohorizonte">Belo Horizonte</option>
-                            <option value="uberlandiar">Uberlândia</option>
-                        </select>
+                        <label for="email">E-mail</label>
+                        <input type="email" required name="email" autofocus>
+
+                        <label for="senha">Senha</label>
+                        <input type="password" required name="senha" autofocus>
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" required name="telefone" autofocus>
+
+                        <label for="cep">CEP</label>
+                        <input type="text" required name="cep" autofocus>
+
+                        <label for="estado">Estado</label>
+                        <input type="text" required name="estado" autofocus>
+
+                        <label for="cidade">Cidade</label>
+                        <input type="text" required name="cidade" autofocus>
+
+                        <label for="lagradouro">Lagradouro</label>
+                        <input type="text" required name="lagradouro" autofocus>
+
+                        <label for="ini_contrato">Ínicio de Contrato:</label>
+                        <input type="date" required name="ini_contrato" autofocus>
+
+                        <label for="salario">Salário</label>
+                        <input type="text" required name="salario" autofocus>
                         
-                        <label for="estado">Selecione o estado</label>
-                        <select name="estado" class="estado">
-                            <option value="vazio"></option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                        </select>
-                        <label for="data">Data de Início do Contrato:</label>
-                        <input type="date" name="data" class="data">
-                        <label for="salario">Salário:</label>
-                        <input type="text" name="salario" class="salario">
-                        <label for="senha">Senha:</label><br>
-                        <input type="password" name="senha" class="senha">
-                    </div>
-
-                    <div class="coluna3">
                         <label for="medico">É médico?</label>
-                        <input type="checkbox" class="medico" id="medico" name="medico" value="medico">
+                        <input type="checkbox" id="eh_medico">
 
-                        <div class="input_box">
-                            <div class="medico_info" id="medico_info" style="display: none;">   
-                                <label for="especialidade">Especialidade medica :</label>
-                                <div class="input_box">
-                                <select name="especialidade" class="especialidade">
-                                    <option value="vazio"></option>
-                                    <option value="cardiologia">Cardiologia</option>
-                                    <option value="dermatologia">Dermatologia</option>
-                                    <option value="endocrinologia">Endocrinologia</option>
-                                    <option value="gastroenterologia">Gastroenterologia</option>
-                                    <option value="geriatria">Geriatria</option>
-                                    <option value="ginecologia">Ginecologia</option>
-                                    <option value="neurologia">Neurologia</option>
-                                    <option value="oftalmologia">Oftalmologia</option>
-                                    <option value="ortopedia">Ortopedia</option>
-                                    <option value="otorrinolaringologia">Otorrinolaringologia</option>
-                                    <option value="pediatria">Pediatria</option>
-                                    <option value="psiquiatria">Psiquiatria</option>        
-                                </select>
-                                </div>
-                                <div class="input_box">
-                                    <label for="crm">CRM:</label><br>
-                                    <input type="text" name="crm" class="crm">
-                                </div>
-                            </div>
+                        <div id="medico_info">
+                            <label for="especialidade">Especialidade médica</label>
+                            <select name="especialidade">
+                                <option value="vazio"></option>
+                                <option value="cardiologia">Cardiologia</option>
+                                <option value="dermatologia">Dermatologia</option>
+                                <option value="endocrinologia">Endocrinologia</option>
+                                <option value="gastroenterologia">Gastroenterologia</option>
+                                <option value="geriatria">Geriatria</option>
+                                <option value="ginecologia">Ginecologia</option>
+                                <option value="neurologia">Neurologia</option>
+                                <option value="oftalmologia">Oftalmologia</option>
+                                <option value="ortopedia">Ortopedia</option>
+                                <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                                <option value="pediatria">Pediatria</option>
+                                <option value="psiquiatria">Psiquiatria</option>
+                            </select>
+
+                            <label for="crm">CRM</label>
+                            <input type="text" name="crm">
                         </div>
-                    </div>
-                </div>
-                <div class="container_botao">
-                    <button class="botao_cadastrar">Cadastrar</button>
-                </div>
+                    <button>Agendar</button>  
             </form>
         </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="div_footer">
-            <div class="conteudo_footer">
-                <h3>Serviços</h3>
-                <ul>
-                    <li>Fisioterapia</li>
-                    <li>Ecocardiograma</li>
-                    <li>Eletrocardiograma</li>
-                    <li>Colonoscopia</li>
-                    <li>Endoscopia</li>
-                    <li>Mamografia</li>
-                    <li>Raio-x</li>
-                    <li>Tomografia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Especialidades</h3>
-                <ul>
-                    <li>Cardiologia</li>
-                    <li>Dermatologia</li>
-                    <li>Endocrinologia</li>
-                    <li>Fisioterapia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Contato</h3>
-                <ul>
-                    <li>(34)98888-8888</li>
-                    <li>(34)98888-8888</li>
-                    <li>atendimento@clinicamaya.com.br</li>
-                    <li>Rua José Sistemas de Informação Jr., 234</li>
-                    <li>Uberlândia</li>
-                </ul>
-            </div>
+    <footer class="container_footer">
+        <div class="conteudo_footer">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Fisioterapia</li>
+                <li>Ecocardiograma</li>
+                <li>Eletrocardiograma</li>
+                <li>Colonoscopia</li>
+                <li>Endoscopia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Especialidades</h2>
+            <ul>
+                <li>Cardiologia</li>
+                <li>Dermatologia</li>
+                <li>Endocrinologia</li>
+                <li>Fisioterapia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Contato</h2>
+            <ul>
+                <li>(34)98888-8888</li>
+                <li>(34)98888-8888</li>
+                <li>atendimento@clinicamaya.com.br</li>
+                <li>Rua José Sistemas de Informação Jr., 234</li>
+                <li>Uberlândia</li>
+            </ul>
         </div>
     </footer>
 
     <script>
-        document.getElementById('medico').onchange = function() {
-        document.getElementById('medico_info').style.display = this.checked ? "block" : "none";};
+        // Captura o elemento do checkbox
+        var checkbox = document.getElementById('eh_medico');
+    
+        // Captura os elementos de especialidade médica e CRM
+        var medicoInfo = document.getElementById('medico_info');
+        var especialidadeSelect = document.querySelector('select[name="especialidade"]');
+        var crmInput = document.querySelector('input[name="crm"]');
+    
+        // Define a função para controlar a visibilidade dos elementos
+        function toggleMedicoInfo() {
+            // Se o checkbox estiver marcado, mostra os elementos de especialidade médica e CRM
+            if (checkbox.checked) {
+                medicoInfo.style.display = 'block';
+                especialidadeSelect.setAttribute('required', ''); // Adiciona o atributo 'required' ao select
+                crmInput.setAttribute('required', ''); // Adiciona o atributo 'required' ao input do CRM
+            } else {
+                // Se o checkbox não estiver marcado, esconde os elementos de especialidade médica e CRM
+                medicoInfo.style.display = 'none';
+                especialidadeSelect.removeAttribute('required'); // Remove o atributo 'required' do select
+                crmInput.removeAttribute('required'); // Remove o atributo 'required' do input do CRM
+            }
+        }
+    
+        // Chama a função toggleMedicoInfo() quando houver uma mudança no estado do checkbox
+        checkbox.addEventListener('change', toggleMedicoInfo);
+    
+        // Chama a função toggleMedicoInfo() uma vez para garantir que os elementos estejam ocultos ou visíveis inicialmente
+        toggleMedicoInfo();
     </script>
+    
 </body>
 </html>
