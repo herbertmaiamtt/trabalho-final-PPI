@@ -6,219 +6,335 @@
     <link rel="stylesheet" href="css/style_listaFuncionarios.css">
     <title>Clínica Maya</title>
 </head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <h1 class="logo_clinica">Clínica Maya</h1>
-            <nav class="cabecalho_menu">
-                <a href="../publico/agendamento.html" class="cabecalho_menu_item">Agendamento</a>
-                <a href="../publico/agendamento.html" class="cabecalho_menu_item">Novo Endereço</a>
-                <a href="../publico/login.html" class="cabecalho_menu_item">Login</a>
-                <a href="../publico/galeria.html" class="cabecalho_menu_item">Galeria</a>
-                <a href="../publico/index.html" class="cabecalho_menu_item">Home</a>
-            </nav>
-        </div>
-        <div class="cabecalho_restrito">
-            <div class="cabecalho_restrito_menu">
-                <h3>Acesso restrito</h3>
-                <a href="index.html" class="cabecalho_restrito_menu_item">Início</a>
-                    <a href="cadastraFuncionario.html" class="cabecalho_restrito_menu_item">Novo Funcionário</a>
-                    <a href="cadastraPaciente.html" class="cabecalho_restrito_menu_item">Novo Paciente</a>
-                    <a href="listaFuncionarios.html" class="cabecalho_restrito_menu_item">Listar Funcionários</a>
-                    <a href="listaEnderecos.html" class="cabecalho_restrito_menu_item">Listar Endereços</a>
-                    <a href="listaAgendamentos.html" class="cabecalho_restrito_menu_item">Listar todos Agendamentos</a>
-            </div>
-        </div>
+<body class="container">
+    <header class="logo">
+        <h1>Clínica Maya</h1>
     </header>
 
-    <main>
-        <div class="conteudo_principal">
-            <table>
-                <caption>
-                    Lista de funcionários
-                </caption>
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Sexo</th>
-                        <th>Telefone</th>
-                        <th>CEP</th>
-                        <th>Ladradouro</th>
-                        <th>Cidade</th>
-                        <th>Estado</th>
-                        <th>Início do contrato</th>
-                        <th>Salário</th>
-                        <th>Senha</th>
-                        <th>Especialidade médica</th>
-                        <th>CRM</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                    <tr>
-                        <td>Jorge Amado</td>
-                        <td>jorgeamado@gmail.com</td>
-                        <td>Masculino</td>
-                        <td>34999999999</td>
-                        <td>234367</td>
-                        <td>367</td>
-                        <td>Uberlândia</td>
-                        <td>Minas Gerais</td>
-                        <td>05/03/2018</td>
-                        <td>33.000</td>
-                        <td>123senha</td>
-                        <td>Pediatra</td>
-                        <td>0-45452</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <nav>
+        <ul class="menu">
+            <li class="item_menu"><a href="index.html" class="link_menu">Home</a></li>
+            <li class="item_menu"><a href="cadastraFuncionario.html" class="link_menu">Novo Funcionário</a></li>
+            <li class="item_menu"><a href="cadastraPaciente.html" class="link_menu">Novo Paciente</a></li>
+            <li class="item_menu"><a href="listaFuncionarios.html" class="link_menu">Funcionários</a></li>
+            <li class="item_menu"><a href="listaEnderecos.html" class="link_menu">Endereços</a></li>
+            <li class="item_menu"><a href="listaAgendamentos.html" class="link_menu">Agendamentos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo">
+        <section>
+            <h1>Tabela de Funcionários</h1>
+        <div id="container_tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Sexo</th>
+                            <th>Telefone</th>
+                            <th>CEP</th>
+                            <th>Ladradouro</th>
+                            <th>Cidade</th>
+                            <th>Estado</th>
+                            <th>Início do contrato</th>
+                            <th>Salário</th>
+                            <th>Senha</th>
+                            <th>Especialidade médica</th>
+                            <th>CRM</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Amado</td>
+                            <td>jorgeamado@gmail.com</td>
+                            <td>Masculino</td>
+                            <td>34999999999</td>
+                            <td>234367</td>
+                            <td>367</td>
+                            <td>Uberlândia</td>
+                            <td>Minas Gerais</td>
+                            <td>05/03/2018</td>
+                            <td>33.000</td>
+                            <td>123senha</td>
+                            <td>Pediatra</td>
+                            <td>0-45452</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="div_footer">
-            <div class="conteudo_footer">
-                <h3>Serviços</h3>
-                <ul>
-                    <li>Fisioterapia</li>
-                    <li>Ecocardiograma</li>
-                    <li>Eletrocardiograma</li>
-                    <li>Colonoscopia</li>
-                    <li>Endoscopia</li>
-                    <li>Mamografia</li>
-                    <li>Raio-x</li>
-                    <li>Tomografia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Especialidades</h3>
-                <ul>
-                    <li>Cardiologia</li>
-                    <li>Dermatologia</li>
-                    <li>Endocrinologia</li>
-                    <li>Fisioterapia</li>
-                </ul>
-            </div>
-            <div class="conteudo_footer">
-                <h3>Contato</h3>
-                <ul>
-                    <li>(34)98888-8888</li>
-                    <li>(34)98888-8888</li>
-                    <li>atendimento@clinicamaya.com.br</li>
-                    <li>Rua José Sistemas de Informação Jr., 234</li>
-                    <li>Uberlândia</li>
-                </ul>
-            </div>
+    <footer class="container_footer">
+        <div class="conteudo_footer">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Fisioterapia</li>
+                <li>Ecocardiograma</li>
+                <li>Eletrocardiograma</li>
+                <li>Colonoscopia</li>
+                <li>Endoscopia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Especialidades</h2>
+            <ul>
+                <li>Cardiologia</li>
+                <li>Dermatologia</li>
+                <li>Endocrinologia</li>
+                <li>Fisioterapia</li>
+            </ul>
+        </div>
+        <div class="conteudo_footer">
+            <h2>Contato</h2>
+            <ul>
+                <li>(34)98888-8888</li>
+                <li>(34)98888-8888</li>
+                <li>atendimento@clinicamaya.com.br</li>
+                <li>Rua José Sistemas de Informação Jr., 234</li>
+                <li>Uberlândia</li>
+            </ul>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('medico').onchange = function() {
-        document.getElementById('medico_info').style.display = this.checked ? "block" : "none";};
-    </script>
 </body>
 </html>

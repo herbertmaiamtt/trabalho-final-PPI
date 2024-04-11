@@ -1,145 +1,233 @@
-@font-face{
+/*
+fonte baixada
+*/
+@font-face {
     font-family: "Mogent";
     src: url("../fonts/Mogent.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
+
+/*
+para facilitar a utilização das cores do site
+*/
 :root{
-    --cor_fundo:#daf4ff;
-    --cor_cabecalho:#2A56A4;
+    --cor_fundo:#edf1f6; 
+    --cor_cabecalho:#081f5c;
     --cor_item_cabecalho:#dfe7ff;
-    --cor_conteudo:#f6fcfe;  
-    --cor_destaque:#0095d5;
+    --cor_conteudo:#f6fcfe;    
+    --cor_destaque:#f6fcfe; 
     --cor_logo:#87d1eb;
-    --cor_input: #f2f2f2;
-    --cor_aside: #1E2D59;
+    --cor_input: #f2f2f2; 
 }
-
-body{
-    background-color: #daf4ff;
-    margin: 0px;
-}
-
-header{
-    position: sticky;
-    top: 0;
-    border-bottom: 0.4px solid #FFF2E7;
-}
-
-/*Menu de navegação pública*/
-.cabecalho{
-    background-color: #2A56A4;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo_clinica{
-    margin-left: 30px;
-    font-family: Mogent;
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 1px 1px #daf4ff;
-    color: #87d1eb;
-}
-
-.cabecalho_menu{
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 30px;
-    gap: 30px;
-}
-
-.cabecalho_menu_item{
-    text-decoration: none;
-    font-family: Mogent;
-    font-weight: bolder;
-    color:#daf4ff;
-}
-
-/*Menu de navegação restrita*/
-.cabecalho_restrito{
-    background-color: var(--cor_aside);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: Mogent;
-}
-
-.cabecalho_restrito_menu{
-    display: flex;
-    flex-direction: row;
-    margin-right: 30px;
-    gap: 30px;
-    align-items:baseline
-}
-
-.cabecalho_restrito_menu > h3{
-    margin-left: 30px;
-    color: var(--cor_fundo);
-}
-
-.cabecalho_restrito_menu_item{
-    text-decoration: none;
-    margin-left: 30px;
-    color: var(--cor_fundo);
-}
-
-/*Conteúdo principal*/
-main{
-    display: flex;
-    height: 573px;
-}
-
-.conteudo_principal{
-    background-color: var(--cor_conteudo);
-    display: flex;
-    justify-content: center;
-    max-width: 1500px;
-    border-radius: 10px;
-    margin: auto;
-    padding: 20px;
-    overflow-x: auto;
-}
-
-table{
-    font-size: 18px;
-}
-
-th, td{
-    border: 1px solid gray;
-    padding: 5px;
-}
-
-/*Rodapé*/
-footer{
-    bottom: 0;
-    left: 0;
-    width: 100%;    
-}
-
-.div_footer{
-    background-color: #2A56A4;
-    display: flex;
-    justify-content: space-around;
-    align-items:flex-start;
-    border-top: 0.4px solid #FFF2E7;
-}
-
-.conteudo_footer{
+ 
+ /*
+ tag: body
+ facilita o posicionamento do rodapé sempre
+ na parte de baixo da página
+ */
+ .container{
+    background-color: var(--cor_fundo);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.conteudo_footer, li{
-    color: white;
-    text-decoration: none;
+/*
+tag: header
+controla a tag h1 com o nome da clínica
+*/
+.logo{
+    background-color: var(--cor_cabecalho);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /*fontes*/
+    font-family: Mogent;
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: 1px 1px #daf4ff;
+    color: var(--cor_logo);
+}
+
+/*
+tag: ul
+fica dentro de nav e é utilizada para responsividade
+do menu
+*/
+.menu{
+    background-color: var(--cor_cabecalho);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
+    /*
+    tag: li
+    todos os itens ocupam no min 200px e crescem
+    e diminuem de igualmente
+    */
+    .item_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 200px;
+        margin: 5px;
+        padding: 0;
+    }
+        /*
+        tag: a
+        parmite que ao clicar em qualquer área dentro do
+        espaço da tag a ação de redirecionar para o link
+        seja ativada
+        */
+        .link_menu{
+            display: block;
+            padding: 20px;
+            /*fontes*/
+            font-family: Mogent;
+            text-decoration: none;
+            font-weight: bolder;
+            color: var(--cor_item_cabecalho);
+        }
 
-.conteudo_footer > h3{
-    border-bottom: 0.4px solid #FFF2E7;
+/*
+tag: main
+auxilia na responsividade da página utilizando flex: 1 e
+centralização vertical
+*/
+.conteudo{
+    flex: 1;
+    flex-direction: column;
+    /*centralização vertical*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /*fontes*/
+    font-family: Mogent;
+    font-size: large;
+}
+/*////////////////// Formulário //////////////////*/
+section{
+    background-color: var(--cor_conteudo);
+    padding: 30px 15px 20px 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+    max-width: 80vw;
+}
+
+    h1{
+        text-align: center;
+    }
+
+    #container_tabela{
+        overflow-x: auto;
+    }
+
+    table{
+        font-size: 1.5em;
+    }
+
+        th, td{
+            border: 1px solid gray;
+            padding: 4px 2px 4px 2px;
+            text-align: center;
+            text-wrap: nowrap;
+        }
+
+        td{
+            padding: 5px;
+        }
+
+/*////////////////// Fim formulário //////////////////*/
+.container_footer{
+    background-color: var(--cor_cabecalho);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+    .conteudo_footer{
+        text-decoration: none;
+        color: white;
+    }
+
+    .conteudo_footer li{
+        list-style-type: none;
+    }
+
+    .conteudo_footer h2{
+        border-bottom: 0.4px solid #FFF2E7;
+    }
+/*////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 900px){
+    .item_menu{
+        flex-basis: 100px;
+    }
+
+}
+
+/*
+configurações para telas menoras que 700px
+*/
+@media (max-width: 700px){
+    .conteudo{
+        padding: 0;
+    }
+
+    section{
+        margin: 10px;
+        min-width: 500px;
+    }
+
+    table{
+        font-size: 1em;
+    }
+
+    .container_campo{
+        width: 100%;
+    }
+
+    .container_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .conteudo_footer{
+            width: 300px;
+            text-align: center;
+        }
+
+        .conteudo_footer h2{
+            text-align: start;
+        }
+}
+
+/*
+configurações para telas menores que 520px
+*/
+@media (max-width: 550px){
+    section{
+        min-width: 325px;
+    }
+}
+
+@media (max-width: 370px){
+    section{
+        background-color: var(--cor_fundo);
+        min-width: 200px;
+        box-shadow: none;
+    }
+
+    table{
+        font-size: 0.8em;
+    }
 }
